@@ -1,0 +1,271 @@
+/* html *{
+  margin: 0;
+  padding: 0;
+} */
+
+/* #text{
+  color:green;
+}
+
+
+.text{
+  color: hotpink;
+  } */
+
+body {
+  height: 5000px;
+}
+
+header nav ul{
+  
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap:10px;
+
+  li{
+    padding: 0.5rem;
+    position: relative;
+  }
+
+  li::after{
+    content: '';
+    /* width: 100%; */
+    width: 0;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition:all .5s;
+  
+  
+  }
+    li:hover::after{
+      width: 100%;
+    }
+  
+}
+
+h1 {
+  color: blue;
+  /* font-size: 30px;
+  text-align: center;
+   */
+}
+
+h1 {
+  color: orange;
+}
+
+/* 
+
+.warning{
+  color: orange;
+}
+
+p{
+  background-color: red;
+}
+
+#main-header{
+  background-color: hotpink;
+}
+
+
+
+#box{
+  background-color: greenyellow;
+}
+ */
+
+
+
+ /* 선택자 조합 (자식 선택) */
+
+
+ ul{
+  background-color: orange;
+ }
+
+ 
+ .deep-menu{
+  background-color: green;
+ }
+
+/* 클래스 딥메뉴 안에있는 모~~~~든 li*/
+ /* .deep-menu li{
+  background-color: hotpink;
+ } */
+
+
+/* 클래스 딥메뉴 안에있는 친자식 li만 선택 */
+ .deep-menu > li{
+  background-color: hotpink;
+ }
+
+
+/* 어바웃을 선택하여 글자 색깔을 흰색(white)으로 변경해주세요 */
+
+
+
+.deep-menu > li > a{
+  color: white;
+}
+
+.deep-menu{
+  background-color: orange;
+
+  > li{
+
+    background-color: hotpink;
+    
+    > a{
+
+      background-color: green;
+
+      div{
+
+      }
+
+      div:hover{
+
+        span{
+
+        }
+      }
+    }
+  }
+}
+
+.another{
+  
+}
+
+
+
+
+.anchor{
+  color: red;
+}
+
+
+
+.sibling h2 ~ p{
+  background-color: orange;
+}
+
+
+.deep-menu, 
+.sibling,
+.another{
+  background-color: salmon;
+}
+
+
+button:not(.primary){
+  background-color: red;
+  
+}
+
+/*  태그선택자 + 속성성택자 */
+input[type="text"]{
+  border: 1px solid #ccc;
+}
+
+a[target="_blank"] {
+  color: orange;
+}
+
+
+.register > input[type="submit"]{
+  cursor: pointer;
+}
+
+
+.pseudo{
+  width: 200px;
+  /* height: 200px; */
+  background-color: yellow;
+    transition: all 0.5s;
+}
+
+.pseudo:hover{
+  background-color: tomato;
+}
+
+/* pseudo안에있는 a에 마우스를 올렸을 때  */
+.pseudo a:hover{
+  color:green
+}
+
+/* pseudo에 마우스를 올렸을 때  a의 값이 변경  */
+
+/* Hover event는 될 수 있으면 부모에게 주고 자식을 변경하는  */
+.pseudo:hover > a{
+  color:green
+}
+
+
+.pseudo > a{
+  width: 100px;
+  height: 100px;
+  background-color: greenyellow;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.pseudo:hover > a{
+  transform:translateX(100px);
+  
+}
+
+
+.pseudo > a:focus{
+  outline: 2px solid blue;
+}
+
+/* .pseudo > ul > li:last-child{ */
+/* .pseudo > ul > li:nth-child(3), */
+/* .pseudo > ul > li:nth-child(6){ */
+/* .pseudo > ul > li:nth-child(4n){ */
+/* .pseudo > ul > li:nth-child(odd){ */
+.pseudo > ul > li:nth-child(even){
+  background-color: hotpink;
+}
+
+
+.pseudo-element > h2{
+  color:orange;
+}
+
+
+.pseudo-element > h2::before{
+  content: '💅';
+  
+}
+.pseudo-element > h2::after{
+  content: '🐯';
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

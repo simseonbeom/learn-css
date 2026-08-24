@@ -1,0 +1,20 @@
+body {
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: navy;
+  font-size: 40px;
+}
+
+h2 {
+  color: royalblue;
+}
+
+p {
+  color: #333;
+}
+
+a {
+  color: green;
+}

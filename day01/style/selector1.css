@@ -1,0 +1,25 @@
+h1 { color: #ff4545;}
+
+.class-box {
+    background-color: #349eda;
+}
+
+#id-box {
+    background-color: #54c741;
+}
+
+.color-box {
+    background-color: #c53cc3;
+}
+
+.color-box > a {
+    color: #e7d93f;
+}
+
+#color-list li {
+    color: #1fd2cd;
+}
+
+#color-list > .point {
+    color: #ff871c;
+}
