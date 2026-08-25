@@ -1,0 +1,61 @@
+
+
+
+
+.course-link:hover{
+  color: red;
+}
+
+.apply-button:focus-visible{
+  outline: 3px solid dodgerblue;
+  outline-offset: 3px;
+}
+
+/* 함께 가지고 있는 */
+.재간둥이.잠꾸러기{
+
+  color:#ff000091;
+
+}
+
+input:checked{
+  accent-color: red;
+}
+
+button:disabled{
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.notice{
+  background-color: transparent;
+  /* background-color: orange; */
+  /* opacity: 0.5; */
+}
+
+.notice::before{
+  content: '📢 ';
+}
+
+
+.external::after{
+  content: '↗';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

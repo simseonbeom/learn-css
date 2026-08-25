@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+
+
+
+html{
+
+  font-size: 20px;
+  
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a{text-decoration:none;color:inherit}
+:root{
+
+}
+
+
+
+
+.hero{
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+}
+
+
+
+
+/* 부모는 크기 설정이 없을 경우 자식들로부터 크기를 상속받습니다. */
+.box01 {
+  border: 2px solid black;
+  font-size: 30px;
+  color: rgb(255, 89, 0);
+  /* height: 396px; */
+
+  p {
+    background-color: green;
+    width: 300px;
+    height: 500px;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+p {
+  color: gray !important;
+}
+p {
+  color: blue !important;
+}
+
+body{
+  height: 5000px;
+    /* background-image: url('../assets/pattern.png'); */
+}
+
+/* 
+<img> 태그
+- 부모에게 크기를 상속한다.
+- 사용자에게 정보 제공을 위해서 (alt)
+- 1층에 배치 
+
+
+background-image
+- 크기에 관여하지 않는다.
+- 정보 제공에 관여하지 않는다. (deco)
+- 이미지가 부모의 크기보다 작을경우 이미지를 전체 반복
+- 이미지의 크기보다 부모의 크기가 작을 경우 이미지를 crop
+- 지하층 배치
+
+*/
+
+
+
+.box03{
+  width: 500px;
+  height: 500px;
+  border: 1px solid gray; 
+  /* background-image: url('../assets/mozzi.png'); */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 10% 10%; */
+  /* background-position: right bottom; */
+  /* background-position: center; */
+  /* background-size: contain;  */
+  /* background-size: cover;  */
+  /* background: dodgerblue url('../assets/mozzi.png') center / cover no-repeat ; */
+  /* background-attachment: fixed; */
+  /* background-image: linear-gradient(30deg, white, yellow, orange, orangered, red, rgb(71, 0, 0),black); */
+  /* background-image: radial-gradient(circle, white, yellow, orange, orangered, red, rgb(71, 0, 0),black); */
+  background: #833AB4;
+  background: linear-gradient(205deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 23%, rgba(253, 60, 37, 0) 53%, rgba(253, 92, 46, 1) 82%, rgba(252, 176, 69, 1) 100%);
+  /* border-radius: 0 20px 30px 40px; */
+  /* border-bottom: 0 solid transparent; */
+  /* border-right: 0 solid transparent; */
+  /* transition:all .5s; */
+  border-radius: 50%;
+}
+
+.box03:hover{
+  /* transform:translate(-5px,-5px);
+  border-bottom: 10px solid gray;
+  border-right: 10px solid gray; */
+}
+
+
+body{
+
+}
+
+
+@font-face{
+  font-family: 'pretendard';
+  src: url('../assets/font/PretendardVariable.ttf') format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+.box04{
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "pretendard", sans-serif;
+  font-weight: 300;
+  line-height: 1.5; /* 24px */
+  /* text-align: justify; */
+  /* text-align: center; */
+  text-decoration: underline;
+  /* text-decoration: line-through; */
+  /* text-decoration: overline; */
+  text-underline-offset: 2px;
+  text-transform: capitalize;
+  /* letter-spacing: 2px; */
+  /* word-spacing: 10px; */
+  text-indent: 16px;
+  /* white-space:nowrap; */
+  /* width: 240px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+
+  display: -webkit-box;
+  overflow: hidden;
+  /* horizontal  vertical */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+
+  width: 300px;
+  transition:all .5s;
+  /* transform:translate(-5px -5px); */
+    box-shadow: 5px 5px 9px 4px #0000006e;
+    
+
+}
+
+.box04:hover{
+  transform:translate(-5px -5px);
+  box-shadow: 5px 5px 9px 4px #0000006e;
+}
+
+
+
+
+.box06{
+  /* width: 100%; */
+  width: 50vw;
+  background-color: salmon;
+  text-shadow: 2px 2px 4px #000000ad;
+
+  h2{
+    color: white;
+    font-size: clamp(30px, 5vw, 100px);
+  
+  }
+}
+
+
+
+/* em은 나 또는 내 부모 기준 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.box05{
+
+  width: 10vw;
+  height: 10vw;
+  transition: all .5s;
+  border: 1px solid rgba(128, 128, 128, 0.126);
+  background-color: white;
+
+}
+
+
+.box05:hover{
+  transform: translate(-10px,-10px);
+  box-shadow: 5px 5px 9px 4px #0000006e;
+}
+
+
+
+
+
