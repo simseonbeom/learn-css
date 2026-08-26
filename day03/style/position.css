@@ -1,0 +1,106 @@
+
+body{
+  height: 5000px;
+  /* position: relative; */
+}
+
+.boxes{
+  width: 200px;
+  height: 200px;
+}
+
+
+.box01{
+  background-color: orange;
+  /* margin-top: 100px; */
+  position: relative;
+  top: 100px;
+  left: 350px;
+}
+
+.box02{
+  background-color: greenyellow;
+  margin-inline: auto;
+  position: relative;
+}
+
+
+.container{
+  width: 80vw;
+  height: 80vw;
+  background-color: hotpink;
+  position: relative;
+
+
+  header{
+    height: 150px;
+    background-color: red;
+    position: sticky;
+    top: -50px; /* 고정될 축의 위치값 */
+  }
+}
+
+.b1{
+  background-color: dodgerblue;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.b2{
+  background-color: orange;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.b3{
+  background-color: gray;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.b4{
+  background-color: navy;
+  position: absolute;
+  right: -200px;
+  bottom: -200px;
+}
+
+.b5{
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+}
+
+
+
+.box03{
+  width: 400px;
+  height: 200px;
+  background-color: springgreen;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+
+  img{
+    width: 100%;
+  }
+}
+
+
+
+.float{
+
+  position: absolute;
+  inset: 0;
+  /* left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; */
+  background-color: rgba(0, 0, 0, 0.276);
+}
