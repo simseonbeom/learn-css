@@ -1,0 +1,83 @@
+
+
+
+body{
+  background-color: rgb(233, 241, 255);
+  text-align: center;
+}
+
+
+.profile{
+  background-color: white;
+  border: 2px solid black;
+  width: 90%;
+  max-width: 720px;
+  border-radius: 1rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.profile-image{
+  width: 9rem; /* 16 * 9 = 144px */
+  height: 9rem;
+  border: 4px solid rgb(230, 235, 255);
+  border-radius: 50%;
+}
+
+
+.profile-title{
+  color:rgb(39, 39, 140);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+.profile-section{
+  h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+      color:rgba(39, 39, 140, 0.822);
+      
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+
+  }
+}
+
+.profile-link{
+  display: inline-block;
+  background-color: dodgerblue;
+  padding: 0.7rem 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid navy;
+  border-radius: 5px;
+  
+
+  &:hover,
+  &:focus-visible{
+    background-color: rgb(17, 115, 212);
+    border: 1px solid rgb(3, 3, 82);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

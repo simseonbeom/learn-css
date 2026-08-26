@@ -116,7 +116,7 @@ body{
   font-family: 'pretendard';
   src: url('../assets/font/PretendardVariable.ttf') format("truetype");
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 100;
   font-display: swap;
 }
 
@@ -213,6 +213,7 @@ body{
 .box05:hover{
   transform: translate(-10px,-10px);
   box-shadow: 5px 5px 9px 4px #0000006e;
+  
 }
 
 
