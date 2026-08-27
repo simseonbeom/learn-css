@@ -1,0 +1,50 @@
+
+body{
+  position: relative;
+}
+
+.white{
+  height: 1000px;
+}
+
+.green{
+  width: 660px;
+  height: 450px;
+  background-color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -330px;
+  margin-top: -225px;
+  /* transform: translate(-50%, -50%); */
+  
+  
+  div{
+    width: 120px;
+    height: 120px;
+    background-color: black;
+  }
+
+  .box02{
+    position: absolute;
+    right: -120px;
+    top: -120px;
+  }
+
+  .box03{
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+.gray{
+  height: 1000px;
+  background-color: gray;
+}
+

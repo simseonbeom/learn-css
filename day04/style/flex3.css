@@ -1,0 +1,68 @@
+
+
+
+.wrapper{
+  max-width: 1000px;
+  margin-inline: auto;
+
+  header{
+    height: 100px;
+    background-color: #ffa500;
+    margin-bottom: 20px;
+  }
+
+  footer{
+    height: 50px;
+    background-color: gray;
+  }
+}
+
+
+.container{
+
+  .main-contents-group{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .snb{
+      width: 200px;
+      height: 700px;
+      background-color: dodgerblue;
+    }
+    .contents{
+      /* width: 790px; */
+      flex: 1;
+      /* height: 700px; */
+      background-color: greenyellow;
+      margin-left: 10px;
+    }
+  }
+
+  .bottom-list{
+    margin-bottom: 20px;
+    
+
+    ul{
+      display: flex;  
+      justify-content: space-between;
+      gap:5px;
+      height: 130px;
+
+      li{
+        /* width: 330px; */
+        flex: 1;
+        background-color: hotpink;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

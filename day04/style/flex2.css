@@ -1,0 +1,53 @@
+
+body{
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 600px;
+  height: 600px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-between;
+  /* align-items: space-; */
+  align-content: space-between;
+
+
+  .item{
+    width: 250px;
+    height: 250px;
+    background-color: dodgerblue;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.5rem;
+    /* text-align: center; */
+    /* line-height: 250px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

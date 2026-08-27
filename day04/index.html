@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-
-
     <!-- <div class="box0"></div> -->
     <div class="boxes box01"></div>
     <div class="boxes box02"></div>
@@ -19,9 +17,13 @@
         <button type="button">❌</button>
       </div>
     </dialog>
-    
 
+    <div class="group-a">
+      <div class="child">z-index: 9999</div>
+    </div>
+    <div class="group-b">다른 영역</div>
 
-
+    .group-a { position: relative; z-index: 1; } .group-b { position: relative;
+    z-index: 2; } .child { position: absolute; z-index: 9999; }
   </body>
 </html>
