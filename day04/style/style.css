@@ -1,0 +1,75 @@
+
+
+.boxes{
+  width: 200px;
+  height: 350px;
+  position: absolute;
+}
+
+.box0{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  z-index: 100;
+  position: relative;
+}
+
+.box01{
+  background-color: orange;
+  left: 50px;
+  top: 50px;
+  z-index: 100;
+}
+
+.box02{
+  background-color: green;
+  left: 100px;
+  top: 100px;
+  z-index: 200;
+}
+
+.box03{
+  background-color: dodgerblue;
+  left: 150px;
+  top: 150px;
+}
+
+
+.modal{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  /* left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; */
+  background-color: rgba(0, 0, 0, 0.262);
+  z-index: 4000;
+  backdrop-filter: blur(5px);
+
+
+  .contents-box{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+
+    button{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+}
+
+
+
+
+
+
+
