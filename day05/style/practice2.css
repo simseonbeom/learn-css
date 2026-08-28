@@ -1,0 +1,170 @@
+
+
+.site-header {
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffffcc;
+  border-bottom: 1px solid #eee;
+
+  .header-inner{
+    max-width: 1200px;
+    /* background: dodgerblue; */
+    min-height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 1rem;
+    
+    .logo{
+      font-size: 1.5rem;
+      color: dodgerblue;
+      font-weight: 700;
+    }
+
+    .navigation{
+      display: flex;
+      gap:1.5rem;
+      font-weight: 700;
+
+      a{
+        display: block;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+
+.main-content{
+  max-width: 1200px;
+  margin: 0 auto ;
+  padding-block: 64px;
+  padding-inline: 2rem;
+  background-color: #eff2ff;
+  
+}
+
+
+.section-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+
+  h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  .eyebrow,
+  .more-link{
+    color: dodgerblue;
+    font-weight: bold;
+  }
+
+}
+
+
+.card-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:24px;
+}
+
+.course-card{
+  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  background-color: #fff;
+
+  .card-thumbnail{
+    
+    position: relative;
+
+    img{
+      width: 100%;
+      /* height: 200px; */
+      /* height: auto; */
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+  }
+
+  .badge{
+    padding: 6px 10px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+
+  }
+
+}
+
+
+.card-content{
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  
+  .category{
+    color: dodgerblue;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .description{
+    color:rgb(83, 83, 83)
+  }
+  
+}
+
+
+
+.card-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .price{
+
+  }
+  .course-link{
+    border: 1px solid gray;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

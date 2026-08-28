@@ -1,0 +1,103 @@
+
+
+
+.dashboard {
+
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 200px 1fr; 
+
+}
+
+
+
+
+
+.sidebar{
+  background-color: gray;
+  padding: 20px;
+  color: white;
+
+
+}
+
+.main{
+  padding: 20px;
+  display: grid;
+  gap:20px;
+  background-color: #eee;
+}
+
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+
+  .card{
+    background-color: #fff;
+    border-radius: 1rem;
+
+    &:first-child{
+      grid-column: span 2;
+    }
+  }
+}
+
+.contents{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap:20px;
+
+  .chart,
+  .info{
+    background-color: #fff;
+    border-radius: 1rem;
+  }
+}
+
+
+
+
+@media (max-width:800px){
+
+  .dashboard{
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar{
+    display: none;
+    background-color: dodgerblue;
+  }
+
+  .cards{
+    grid-template-columns: 1fr;
+  }
+
+  .card:first-child{
+    /* grid-column: 1/1; */
+  }
+
+  .contents{
+    grid-template-columns: 1fr;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
