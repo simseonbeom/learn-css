@@ -1,16 +1,40 @@
+@layer reset, base, components;
 
+@import url("../../reset.css") layer(reset);
+@import url("./base.css") layer(base);
+@import url("./components.css") layer(components);
 
-@import url("../../reset.css");
-@import url("./base.css");
-@import url("./components.css");
-
-
-.option{
-  border: 1px solid gray;
-  padding: 2rem;
+:root {
+  --primary: dodgerblue;
+  --spacing-4: 16px;
 }
 
-.option.active{
+dialog {
+  /* 도착값 */
+  opacity: 1;
+  transform: translateY(0);
+
+  transition:
+    opacity 300ms,
+    transform 300ms;
+
+  /* 초깃값 */
+  @starting-style {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.button {
+  background-color: var(--primary);
+}
+
+.option {
+  border: var(--spacing-4) solid gray;
+  padding: var(--spacing-4);
+}
+
+.option.active {
   border: 1px solid red;
 }
 
@@ -19,45 +43,43 @@
   background: #eef4ff;
 }
 
-hr{
+hr {
   margin: 3rem 0;
 }
 
-.container{
+.container {
   border: 1px solid black;
-  .boxes{
+  .boxes {
     width: 200px;
     height: 200px;
   }
+
+  .box01 {
+    anchor-name: --box;
+  }
 }
 
-.wrapper{
+.wrapper {
   width: 500px;
   border: 1px solid black;
   /* container-type: inline-size; */
   /* container-name: wrapper; */
   container: wrapper / inline-size;
 
-
-  .boxes{
+  .boxes {
     width: 25cqw;
     height: 200px;
-    
   }
 }
 
-.box01{
+.box01 {
   background-color: dodgerblue;
 }
 
-
-
 @container wrapper (width < 300px) {
-  .box01{
+  .box01 {
     background-color: hotpink;
   }
-
-
 }
 
 /* @media screen () and (width < 800px) {
@@ -66,17 +88,12 @@ hr{
   }
 } */
 
-
-section{
+section {
   container-type: inline-size;
-}
-h2{
-
-
 }
 
 @container {
-  h2{
+  h2 {
     background-color: orange;
   }
 }
@@ -93,8 +110,81 @@ section {
   border: 1px solid black;
   scroll-snap-align: start;
 
-  &:nth-child(2){
+  &:nth-child(2) {
     background-color: gray;
   }
 }
 
+.progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 10px;
+  background-color: red;
+  width: 100vw;
+  z-index: 10;
+  transform-origin: left;
+  animation: progress linear;
+  animation-timeline: scroll();
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+section {
+  height: 100vh;
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range: entry -100% entry 10%;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.help-button {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  color: white;
+  anchor-name: --help;
+}
+
+.tooltip {
+  position: absolute;
+  position-anchor: --box;
+  position-area: right;
+  /* left: 30px; */
+  /* right: 10px; */
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+textarea {
+  field-sizing: content;
+  min-height: 100px;
+  max-height: 400px;
+}

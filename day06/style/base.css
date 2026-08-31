@@ -34,3 +34,8 @@ h2{
 button {
   cursor: pointer;
 }
+
+
+#app .card .button{
+  background-color: red;
+}
