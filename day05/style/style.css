@@ -1,0 +1,49 @@
+
+.menu{
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all .5s;
+  transform:translateX(100%);
+  background-color: gray;
+}
+
+.menu.isActive{
+  transform:translateX(0);
+}
+
+
+.card{
+  overflow: hidden;
+}
+
+.card-image{
+  transition: all .5s;
+}
+
+.card:hover .card-image{
+  transform:scale(1.3);
+}
+
+
+.boxes{
+  width: 200px;
+  height: 200px;
+}
+
+.box01{
+  background-color: hotpink;
+  transition: all .5s ease;
+}
+
+.box01:hover{
+  /* margin-left: 100px; */
+  background-color: orange;
+  /* border-color: #93c5fd; */
+  /* box-shadow: 0 16px 30px rgb(0 0 0 / 12%); */
+  transform: rotate(-360deg)
+
+}
+

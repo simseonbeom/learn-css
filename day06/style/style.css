@@ -1,0 +1,132 @@
+
+.box-container{
+  display: inline-block;
+  border: 1px solid black;
+  margin: 3rem;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  transition:all .5s;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);; */
+  /* transform-origin: 50px 50px; */
+  position: relative;
+  left: 0;
+}
+
+.box-container:hover .box{
+  /* transform:translate(100%,100%); */
+  /* transform:scale(1.5); */
+  /* transform:rotate(1turn); */
+  /* transform:skew(30deg) rotate(360deg) translate(100px); */
+  /* margin-left: 20px; */
+  /* left: 20px; */
+  padding-left: 20px;
+  /* width: 300px; */
+  /* height: 300px; */
+}
+
+.box02{
+  
+  width: 200px;
+  height: 200px;
+  background-color: hotpink;
+  /* animation: move-x 1.5s cubic-bezier(0.86,-0.1, 0.12, 1.14) 3;
+  animation-direction: alternate;
+  animation-fill-mode: forwards; */
+  /* animation-play-state: paused; */
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .box02{
+    animation: none
+  }
+}
+
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+.box-container.active .box02{
+  animation-play-state: running;
+}
+
+
+@keyframes move-x {
+  to{
+    transform:translateX(100%);
+  }
+}
+
+.star{
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  transform:scale(0.2);
+  animation: star 1s infinite alternate
+}
+
+.star img{
+  animation: rotate 5s infinite;
+}
+
+@keyframes star {
+  to{
+    transform:translateY(30px) scale(0.2);
+  }
+}
+
+@keyframes rotate {
+  to{
+    transform:rotate(1turn);
+  }
+}
+
+/* 애니메이션 정의 */
+@keyframes fade-in{
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+

@@ -1,0 +1,235 @@
+
+
+.site-header {
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffffcc;
+  border-bottom: 1px solid #eee;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: header 0.3s forwards;
+
+  .header-inner{
+    max-width: 1200px;
+    /* background: dodgerblue; */
+    min-height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 1rem;
+    
+    .logo{
+      font-size: 1.5rem;
+      color: dodgerblue;
+      font-weight: 700;
+    }
+
+    .navigation{
+      display: flex;
+      gap:1.5rem;
+      font-weight: 700;
+
+      a{
+        display: block;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+
+
+.main-content{
+  max-width: 1200px;
+  margin: 0 auto ;
+  padding-block: 64px;
+  padding-inline: 2rem;
+  background-color: #eff2ff;
+  animation: header 0.3s forwards 0.3s;
+  opacity: 0;
+  transform:translateY(30px);
+}
+
+
+.section-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+
+  h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  .eyebrow,
+  .more-link{
+    color: dodgerblue;
+    font-weight: bold;
+  }
+
+}
+
+
+.card-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:24px;
+}
+
+.course-card{
+  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  background-color: #fff;
+  animation: move-y 0.3s ease-in-out forwards;
+  opacity: 0;
+  .card-thumbnail{
+    
+    position: relative;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      /* height: 200px; */
+      /* height: auto; */
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      transition: all .5s;
+    }
+
+    &:hover img{
+      transform:scale(1.2) rotate(5deg)
+    }
+  }
+
+  .badge{
+    padding: 6px 10px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+
+  }
+
+  &:nth-child(1){animation-delay: 0.3s;}
+  &:nth-child(2){animation-delay: 0.6s;}
+  &:nth-child(3){animation-delay: 0.9s;}
+
+}
+
+
+.card-content{
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  animation: move-x 0.3s forwards;
+  opacity: 0;
+  
+  
+  .category{
+    color: dodgerblue;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .description{
+    color:rgb(83, 83, 83)
+  }
+  
+
+  
+}
+
+
+.course-card:nth-child(1) .card-content { animation-delay: 0.6s;}
+.course-card:nth-child(2) .card-content { animation-delay: 0.8s;}
+.course-card:nth-child(3) .card-content { animation-delay: 0.10s;}
+
+
+.card-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .price{
+
+  }
+  .course-link{
+    border: 1px solid gray;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    animation: tilt-shaking 0.2s infinite paused both;
+
+    &:hover{
+      animation-play-state: running;
+      
+    }
+  }
+}
+
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+@keyframes move-y {
+  from{
+    opacity: 0;
+    transform:translateY(30px)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+
+@keyframes move-x {
+  from{
+    transform:translateX(-30px);
+    opacity: 0;
+  }
+  to{
+    transform:translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes header {
+  to{
+    opacity: 1;
+    transform:translateY(0)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
