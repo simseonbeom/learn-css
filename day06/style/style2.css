@@ -1,0 +1,100 @@
+
+
+@import url("../../reset.css");
+@import url("./base.css");
+@import url("./components.css");
+
+
+.option{
+  border: 1px solid gray;
+  padding: 2rem;
+}
+
+.option.active{
+  border: 1px solid red;
+}
+
+.option:has(input:checked) {
+  border-color: blue;
+  background: #eef4ff;
+}
+
+hr{
+  margin: 3rem 0;
+}
+
+.container{
+  border: 1px solid black;
+  .boxes{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.wrapper{
+  width: 500px;
+  border: 1px solid black;
+  /* container-type: inline-size; */
+  /* container-name: wrapper; */
+  container: wrapper / inline-size;
+
+
+  .boxes{
+    width: 25cqw;
+    height: 200px;
+    
+  }
+}
+
+.box01{
+  background-color: dodgerblue;
+}
+
+
+
+@container wrapper (width < 300px) {
+  .box01{
+    background-color: hotpink;
+  }
+
+
+}
+
+/* @media screen () and (width < 800px) {
+  .wrapper .box01{
+    background-color: hotpink;
+  }
+} */
+
+
+section{
+  container-type: inline-size;
+}
+h2{
+
+
+}
+
+@container {
+  h2{
+    background-color: orange;
+  }
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 80px;
+}
+
+section {
+  height: calc(100vh - 80px);
+  border: 1px solid black;
+  scroll-snap-align: start;
+
+  &:nth-child(2){
+    background-color: gray;
+  }
+}
+

@@ -1,0 +1,26 @@
+
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+}
+
+.card__title {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.card__description {
+  color: #666;
+}
