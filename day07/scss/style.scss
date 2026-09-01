@@ -1,35 +1,44 @@
 
-$primary: #2563eb;
+@use './abstracts/variables' as var;
 
 
-.course-card {
-  padding: 24px;
-  border-radius: 16px;
-  background: white;
 
-  &:hover { transform: translateY(-4px); }
-  .title { color: $primary; }
-  .button { background: $primary; color: white; }
 
+
+.course-section{
+  padding: var.$spacing-4xl var.$spacing-lg;
+
+  &__inner{
+    width: min(100%, 1120px);
+    margin: 0 auto;
+  }
+
+  &__header{
+    margin-bottom: var.$spacing-2xl;
+  }
+
+  &__eyebrow{
+    display: inline-block;
+    margin-bottom: var.$spacing-md;
+    color: var.$color-primary;
+    font-weight: 700;
+  }
+
+  &__title{
+    margin: 0 0 var.$spacing-md;
+    font-size: clamp(var.$body-2xl, 5vw ,var.$body-3xl);
+    letter-spacing: -0.04em;
+    font-weight: 700;
+  }
+
+  &__description{
+    max-width: 680px;
+    margin: 0;
+    color: var.$color-muted;
+    font-size: var.$body-l;
+    line-height: 1.7;
+  }
 }
-
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-.modal{
-  @include flex-center;
-  color:orange;
-}
-
-
-
-
 
 
 

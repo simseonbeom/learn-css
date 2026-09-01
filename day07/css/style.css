@@ -1,0 +1,31 @@
+.course-section {
+  padding: 80px 24px;
+}
+.course-section__inner {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+.course-section__header {
+  margin-bottom: 48px;
+}
+.course-section__eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #2563eb;
+  font-weight: 700;
+}
+.course-section__title {
+  margin: 0 0 16px;
+  font-size: clamp(30px, 5vw, 50px);
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+.course-section__description {
+  max-width: 680px;
+  margin: 0;
+  color: #979797;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/*# sourceMappingURL=style.css.map */
