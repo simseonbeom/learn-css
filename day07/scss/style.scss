@@ -1,0 +1,42 @@
+
+$primary: #2563eb;
+
+
+.course-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: white;
+
+  &:hover { transform: translateY(-4px); }
+  .title { color: $primary; }
+  .button { background: $primary; color: white; }
+
+}
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.modal{
+  @include flex-center;
+  color:orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

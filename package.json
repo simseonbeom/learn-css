@@ -1,0 +1,27 @@
+{
+  "name": "learn-css",
+  "version": "0.0.1",
+  "description": "css를 학습하는 학습 문서입니다.",
+  "scripts": {
+    "sass":"sass --watch day07/scss:day07/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simseonbeom/learn-css.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "bootstrap"
+  ],
+  "author": "범쌤",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/simseonbeom/learn-css/issues"
+  },
+  "homepage": "https://github.com/simseonbeom/learn-css#readme",
+  "devDependencies": {
+    "sass": "1.103.1"
+  }
+}
