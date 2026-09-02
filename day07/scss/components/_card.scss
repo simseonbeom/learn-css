@@ -1,0 +1,84 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as mix;
+
+.course-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:  $spacing-lg;
+
+  @include mix.mobile{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.course-card{
+  overflow: hidden;
+  border: 1px solid  $color-border;
+  border-radius:  $radius-lg;
+  background:  $color-surface;
+  box-shadow:  $shadow-card;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover{
+    transform: translateY(-4px);
+    box-shadow: 2px 3px 5px 3px #0000004f;
+  }
+
+  &__thumbnail{
+    @include mix.flex-center;
+    min-height: 190px;
+    color: white;
+    font-size:  $heading-sm;
+    font-weight: 700;
+
+    &--html{background: linear-gradient(124deg,rgba(34, 193, 195, 1) 0%, rgba(255, 255, 255, 1) 100%)}
+    &--css{background: linear-gradient(124deg,rgba(34, 112, 195, 1) 0%, rgba(255, 255, 255, 1) 100%);}
+    &--sass{background: linear-gradient(124deg,rgba(37, 34, 195, 1) 0%, rgba(255, 255, 255, 1) 100%);}
+    
+  }
+
+  &__content{
+    padding:  $spacing-lg;
+  }
+
+  &__category{
+    display: inline-block;
+    margin-bottom:  $spacing-sm;
+    color:  $color-primary;
+    font-weight: 700;
+    font-size:  $body-s;
+  }
+
+  &__title{
+    margin: 0 0  $spacing-sm;
+    color: $color-text;
+    font-size:  $body-xl;
+    line-height: 1.3;
+  }
+
+  &__description{
+    margin: 0 0  $spacing-lg;
+    color: $color-muted;
+    line-height: 1.5;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

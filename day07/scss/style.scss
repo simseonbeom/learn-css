@@ -1,7 +1,7 @@
 
 @use './abstracts/variables' as var;
-
-
+@use './components/button';
+@use './components/card';
 
 
 
@@ -36,7 +36,7 @@
     margin: 0;
     color: var.$color-muted;
     font-size: var.$body-l;
-    line-height: 1.7;
+    line-height: 1.3;
   }
 }
 
