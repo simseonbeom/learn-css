@@ -4,33 +4,200 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>부트스트랩을 배워보자!</title>
+    <meta name="description" content="패션의 모든 것, 다 무신사랑 해! " />
+    <link
+      rel="shortcut icon"
+      href="https://getbootstrap.kr/docs/5.3/assets/brand/bootstrap-logo.svg"
+      type="image/x-icon"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        height: 30000px;
+      }
+      .custom-card {
+        border: 2px solid red;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <h2>hello Bootstrap!</h2>
-
-      <div class="d-grid gap-2 text-center">
-        <button class="btn btn-outline-primary btn-lg" disabled>Primary</button>
-        <button class="btn btn-secondary fw-bold text-danger">Secondary</button>
-        <button class="btn btn-success bg-" disabled>Success</button>
-        <button class="btn btn-danger pt-2">Danger</button>
+    <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img
+          src="https://getbootstrap.kr/docs/5.3/assets/brand/bootstrap-logo.svg"
+          alt="Bootstrap"
+          width="30"
+          height="24"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
+    </nav>
 
-      <div class="shadow">Shadow</div>
-
-      <!-- <hr /> -->
-
-      <div class="shadow-sm">Small Shadow</div>
-
-      <!-- <hr /> -->
-
-      <div class="shadow-lg">Large Shadow</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">Column</div>
+        <div class="col-12 col-md-6">Column</div>
+      </div>
     </div>
+    <div class="d-none d-md-block">hello</div>
+
+    <div class="card">
+      <img
+        src="https://i.namu.wiki/i/ReQ7sv1_v4S-Oqewy2xkm6BYFosd1UbG9z37EeQPv5XR-qgsrhvKsqT6kEqidctSj-S3ycgJYjd1XkzUhNFCfQ.webp"
+        alt=""
+      />
+      <div class="card-body">
+        <h5 class="card-title">Frontend Course</h5>
+        <p class="card-text">HTML과 CSS를 학습합니다.</p>
+        <a href="#" class="btn btn-primary">자세히 보기</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <div
+      class="card w-50 m-auto custom-card fs-3 bg-body text-body rounded d-flex justify-content-around align-baseline p-4"
+    >
+      <div class="card-body">
+        <h5 class="card-title mb-4 text-primary fw-bold">로그인</h5>
+        <hr />
+        <div>
+          <label class="form-label" for="email">이메일</label>
+          <input class="form-control" id="email" />
+        </div>
+        <div class="mb-4">
+          <label class="form-label" for="password">password</label>
+          <input class="form-control" id="password" type="password" />
+        </div>
+        <button type="button" class="btn btn-primary w-100">login</button>
+      </div>
+    </div>
+
+    <div class="container p-5">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        data-bs-target=".info,.info2"
+      >
+        강의 정보 보기
+      </button>
+    </div>
+
+    <div class="collapse mt-3 info" id="info">
+      <div class="card card-body">
+        HTML, CSS, Bootstrap을 활용하여 반응형 웹 페이지를 제작합니다.
+      </div>
+    </div>
+
+    <h2 class="info">hello</h2>
+
+    <h2 class="info2">hello world</h2>
+
+    <hr />
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#courseModal"
+    >
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple-music" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="m10.995 0 .573.001q.241 0 .483.007c.35.01.705.03 1.051.093.352.063.68.166.999.329a3.36 3.36 0 0 1 1.47 1.468c.162.32.265.648.328 1 .063.347.084.7.093 1.051q.007.241.007.483l.001.573v5.99l-.001.573q0 .241-.008.483c-.01.35-.03.704-.092 1.05a3.5 3.5 0 0 1-.33 1 3.36 3.36 0 0 1-1.468 1.468 3.5 3.5 0 0 1-1 .33 7 7 0 0 1-1.05.092q-.241.007-.483.008l-.573.001h-5.99l-.573-.001q-.241 0-.483-.008a7 7 0 0 1-1.052-.092 3.6 3.6 0 0 1-.998-.33 3.36 3.36 0 0 1-1.47-1.468 3.6 3.6 0 0 1-.328-1 7 7 0 0 1-.093-1.05Q.002 11.81 0 11.568V5.005l.001-.573q0-.241.007-.483c.01-.35.03-.704.093-1.05a3.6 3.6 0 0 1 .329-1A3.36 3.36 0 0 1 1.9.431 3.5 3.5 0 0 1 2.896.1 7 7 0 0 1 3.95.008Q4.19.002 4.432 0h.573zm-.107 2.518-4.756.959H6.13a.66.66 0 0 0-.296.133.5.5 0 0 0-.16.31c-.004.027-.01.08-.01.16v5.952c0 .14-.012.275-.106.39-.095.115-.21.15-.347.177l-.31.063c-.393.08-.65.133-.881.223a1.4 1.4 0 0 0-.519.333 1.25 1.25 0 0 0-.332.995c.031.297.166.582.395.792.156.142.35.25.578.296.236.047.49.031.858-.043.196-.04.38-.102.555-.205a1.4 1.4 0 0 0 .438-.405 1.5 1.5 0 0 0 .233-.55c.042-.202.052-.386.052-.588V6.347c0-.276.08-.35.302-.404.024-.005 3.954-.797 4.138-.833.257-.049.378.025.378.294v3.524c0 .14-.001.28-.096.396-.094.115-.211.15-.348.178l-.31.062c-.393.08-.649.133-.88.223a1.4 1.4 0 0 0-.52.334 1.26 1.26 0 0 0-.34.994c.03.297.174.582.404.792a1.2 1.2 0 0 0 .577.294c.237.048.49.03.858-.044.197-.04.381-.098.556-.202a1.4 1.4 0 0 0 .438-.405q.173-.252.233-.549a2.7 2.7 0 0 0 .044-.589V2.865c0-.273-.143-.443-.4-.42-.04.003-.383.064-.424.073"/>
+</svg>
+강의 정보
+<i class="bi bi-suit-heart-fill"></i>
+    </button>
+
+    <div class="modal fade" id="courseModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">강의 정보</h2>
+            <button 
+              type="button" 
+              class="btn-close" 
+              data-bs-dismiss="modal" 
+              aria-label="닫기"
+            >
+            </button>
+          </div>
+
+          <div class="modal-body">HTML, CSS, Bootstrap을 배울 수 있는 강의입니다.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+
+
+
   </body>
 </html>
