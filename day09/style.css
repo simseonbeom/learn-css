@@ -1,0 +1,22 @@
+      .hero-visual {
+        min-height: 360px;
+        background:
+          radial-gradient(
+            circle at 20% 20%,
+            rgba(13, 110, 253, 0.3),
+            transparent 35%
+          ),
+          radial-gradient(
+            circle at 80% 80%,
+            rgba(111, 66, 193, 0.3),
+            transparent 35%
+          ),
+          #f8f9fa;
+      }
+
+
+      .course-thumb{
+        aspect-ratio: 16/10;
+        display: grid;
+        place-items: center;
+      }

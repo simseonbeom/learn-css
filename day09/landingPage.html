@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+  
+  <header class="border-bottom bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container py-2">
+        <a href="#" class="navbar-brand fw-bold">Bum Class</a>
+        <button 
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="메뉴 열기"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto me-lg-4">
+            <li class="nav-item">
+              <a href="#course" class="nav-link">강의</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">특징</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">수강 신청</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-dark" role="button">강의 둘러보기</a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="py-5">
+      <div class="container ">
+        <div class="row g-5">
+          <div class="col-12 col-lg-6">
+            <span class="badge text-bg-primary mb-3">Frontend Class</span>
+            <h1 class="display-3 fw-bold lh-sm mb-4">
+              웹 개발의 시작을<br/>
+              함께 만들어보세요.
+            </h1>
+            <p class="lead text-secondary mb-4">HTML과 CSS의 기본부터 Bootstrap을 활용한 반응형 웹사이트 제작까지 단계적으로 학습합니다.</p>
+          </div>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" role="button" class="btn btn-primary btn-lg">강의 살펴보기</a>
+            <a href="#" role="button" class="btn btn-outline-dark btn-lg">과정 소개</a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="hero-visual rounded-4 p-4 overflow-hidden d-flex align-items-end">
+              <div class="bg-white rounded-4 p-4 shadow-sm w-100">
+                <small class="text-secondary">이번 주 학습</small>
+                <div class="d-flex justify-content-between align-items-end mt-3">
+                  <div>
+                    <h2 class="h4 fw-bold mb-1">Bootstrap UI</h2>
+                    <p class="text-secondary mb-0">Grid · Component · Responsive</p>
+                  </div>
+                  <span class="badge text-bg-dark">DAY 04</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="course" class="bg-light py-5">
+      <div class="container">
+        <div class="d-flex flex-column gap-3 justify-content-between">
+          <div>
+            <span class="text-primary fw-bold">COURSE</span>
+            <h2 class="display-6 fw-bold mt-2 mb-0">추천 강의</h2>
+          </div>
+          <p class="text-secondary">기초부터 프로젝트까지 단계적으로 학습합니다.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="h-100 bg-white border rounded-4 overflow-hidden">
+              <div class="course-thumb bg-primary-subtle">
+                <span class="display-6 fw-bold text-primary">HTML</span>
+              </div>
+              <div class="p-4">
+                <span class="badge text-bg-light border mb-3">입문</span>
+                <h3 class="h4 fw-bold">HTML Essential</h3>
+                <p class="text-secondary">웹 문서의 구조와 Semantic HTML, Form, Media 요소를 학습합니다.</p>
+                <a class="btn btn-outline-dark" role="button" href="#">자세히 보기</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="h-100 bg-white border rounded-4 overflow-hidden">
+              <div class="course-thumb bg-primary-subtle">
+                <span class="display-6 fw-bold text-primary">HTML</span>
+              </div>
+              <div class="p-4">
+                <span class="badge text-bg-light border mb-3">입문</span>
+                <h3 class="h4 fw-bold">HTML Essential</h3>
+                <p class="text-secondary">웹 문서의 구조와 Semantic HTML, Form, Media 요소를 학습합니다.</p>
+                <a class="btn btn-outline-dark" role="button" href="#">자세히 보기</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="h-100 bg-white border rounded-4 overflow-hidden">
+              <div class="course-thumb bg-primary-subtle">
+                <span class="display-6 fw-bold text-primary">HTML</span>
+              </div>
+              <div class="p-4">
+                <span class="badge text-bg-light border mb-3">입문</span>
+                <h3 class="h4 fw-bold">HTML Essential</h3>
+                <p class="text-secondary">웹 문서의 구조와 Semantic HTML, Form, Media 요소를 학습합니다.</p>
+                <a class="btn btn-outline-dark" role="button" href="#">자세히 보기</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+  </main>
+
+
+</body>
+</html>
