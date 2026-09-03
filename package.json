@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "css를 학습하는 학습 문서입니다.",
   "scripts": {
-    "sass":"sass --watch day07/scss:day07/css"
+    "sass": "sass --watch day07/scss:day07/css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,12 @@
   },
   "homepage": "https://github.com/simseonbeom/learn-css#readme",
   "devDependencies": {
+    "prettier": "3.9.6",
+    "prettier-plugin-tailwindcss": "0.8.1",
     "sass": "1.103.1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
   }
 }
