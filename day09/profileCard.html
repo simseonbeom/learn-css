@@ -1,58 +1,77 @@
 <!doctype html>
 <html lang="ko-KR">
   <head>
-    <title>Document</title>
+    <title>Movie card</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body class="">
-     <main>
-      <header>
-        <p> Tailwind CSS · Practice 01 </p>
+  <body class="bg-[#09090b] text-white">
+     <main class="px-5 py-14">
+      <header class="mb-10">
+        <p class="mb-2 text-red-500 font-bold text-sm uppercase tracking-[0.2em]"> Tailwind CSS · Practice 01 </p>
 
-        <h1>Movie Card</h1>
+        <h1 class="text-3xl font-black mb-3 tracking-tight">Movie Card</h1>
 
-        <p>
+        <p class="text-zinc-400 text-sm leading-6">
           이미지, 오버레이, absolute positioning, group-hover, transition을 활용해
           스트리밍 서비스 스타일의 콘텐츠 카드를 만들어봅니다.
         </p>
       </header>
 
       <section>
-        <article>
+        <article class="group relative max-w-sm aspect-4/5 rounded-2xl overflow-hidden">
           <img
+            class="h-full w-full objcet-cover"
             src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85"
             alt="밤하늘과 산을 배경으로 한 콘텐츠 이미지"
           />
-          <div></div>    <!-- 이미지에 어두운 배경 처리 -->
+          <div class="absolute inset-0 bg-linear-to-t from-black via-black/25 to-transparent"></div>  
 
-          <div>
-            <span>Top 10</span>
-            <span>15+</span>
+          <div class="absolute left-4 top-4 flex items-center gap-2">
+            <span class="font-black px-2.5 py-1 bg-red-600 rounded uppercase text-xs">Top 10</span>
+            <span class="text-xs bg-black/60 px-2.5 py-1 rounded font-semibold">15+</span>
           </div>
 
-          <button type="button" aria-label="재생"> ▶ </button>
+          <button 
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 
+            -translate-y-1/2 w-14 h-14 bg-white text-zinc-900 text-lg rounded-full
+            scale-75 opacity-0 transition duration-300
+            group-hover:opacity-100 group-hover:scale-100
+            
+            "
+            type="button" aria-label="재생"> ▶ </button>
 
-          <div>
-            <p>Original Series</p>
+          <div class="absolute left-0 bottom-0 p-5 transition duration-300 translate-y-7 group-hover:translate-y-0">
+            <p class="text-red-400 uppercase font-bold tracking-[0.2em] text-xs mb-2">Original Series</p>
 
-            <h2>NIGHTFALL</h2>
+            <h2 class="text-3xl font-black tracking-tight mb-3">NIGHTFALL</h2>
 
-            <div>
-              <span>98% 일치</span>
-              <span>2026</span>
-              <span>HD</span>
+            <div class="flex gap-2 items-center mb-3 text-xs font-semibold">
+              <span class="text-emerald-500">98% 일치</span>
+              <span class="text-zinc-300">2026</span>
+              <span class="border border-zinc-500 px-1.5 py-0.5 rounded text-zinc-300">FHD</span>
             </div>
 
-            <p> 모든 빛이 사라진 도시에서 마지막 신호를 따라가는 세 사람의 미스터리 스릴러. </p>
+            <p class="text-zinc-300 leading-6 line-clamp-2 mb-3"> 모든 빛이 사라진 도시에서 마지막 신호를 따라가는 세 사람의 미스터리 스릴러. </p>
 
-            <div>
-              <button type="button"> ▶ 재생 </button>
-
-              <button type="button" aria-label="내가 찜한 콘텐츠에 추가"> + </button>
+            <div class="
+            flex gap-2 opacity-0 translate-y-2
+            transition duration-300
+            group-hover:opacity-100 
+            group-hover:translate-y-0 
+            
+            ">
+              <button 
+                class="flex-1 bg-white text-zinc-900 px-2 py-2 rounded text-sm"
+                type="button"> ▶ 재생 </button>
+              <button 
+                class="border border-zinc-200 w-10 h-10 rounded-full"
+                type="button" aria-label="내가 찜한 콘텐츠에 추가"> + </button>
             </div>
+
           </div>
+
         </article>
       </section>
     </main>
